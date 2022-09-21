@@ -1,0 +1,421 @@
+@import  url( 'https://fonts.googleapis.com/css2?family=Acme&display=swap' );
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');/*Importacion de tipo de letra*/
+
+
+
+/*reset area de trabajo*/
+*{
+	margin: 0;
+	border:0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+
+/*NAVEGADOR*/
+.nav{
+    background-color:#040F4A;/*Color de fondo*/
+    display: flex;/*direccion de la lista de nav*/
+    flex-direction: column;
+    text-align: center;
+    padding:2% 3%;
+   
+}
+
+.nav img{
+    max-width:600px;/*tamaño de la imagen*/
+    width: 100%;
+    margin: auto;/*para centrar la imagen*/
+}
+      
+.navar li a{
+    color:#C10909;/*color de la letra*/
+    text-decoration: none;/*quita la linea de debajo, que tienen los link por defecto*/
+    font-size:26px;/*tamaño de letra*/
+    font-family: 'Acme', sans-serif;/*tipo de letra*/
+    
+}
+
+.navar li a:hover{
+        color:#FFFFFF;/*cuando paso el mause cambia el color de la letra*/
+        
+}
+
+.navar{
+    margin-top:20px; 
+    display: flex;
+    justify-content: space-evenly;/*distribucion del nav ()<espaciado entre cada link*/
+}
+.consultaDeVuelo{
+    display: flex;
+    flex-direction: column;
+}
+
+.consultaDeVuelo label{
+    color:#C10909;
+    font-size:25px;
+    margin-bottom:8px;
+    font-family: 'Acme', sans-serif;
+}
+
+.consultaDeVuelo button{
+    background-color:#C10909;
+    padding:10px;
+    border-radius:5px;/*redondea los bordes del boton*/
+    min-width:190px ;/*tamaño de la caja*/
+    margin:15px auto;
+    color:#FFFFFF
+}
+
+.consultaDeVuelo button:hover{/*hover" cuando paso el mause por encima"*/
+    background-color:#FFFFFF;
+    color:#040F4A;
+}
+
+.consultaDeVuelo input{
+    padding:8px;
+    max-width:200px ;
+    margin:0 auto;
+    border-radius: 5px;
+    text-align: center;/*centra elementos de la caja*/
+}
+
+/*SECCION DE PROMOCIONES*/
+
+.ContainerPromociones{
+    padding: 40px 60px;
+}
+
+h1{
+    font-family: 'Acme', sans-serif;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px #000000;/*sombreado*/
+    text-align: center;
+}
+
+.card-img-top{
+    max-width: 400px;
+    box-shadow: 2px 3px 3px #000000;/*sombreado*/
+}
+
+
+/*FOOTER*/
+.footer{
+    background-color:#040F4A;
+    padding:30px 20px 20px 20px;
+    
+}
+
+.copy{
+    background-color:#000000;
+    color:#D1D3DB;
+    text-align: center;
+    padding:10px;
+}
+
+.contactenos{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.contactenos li {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+.contactenos li i{
+    font-size:22px;
+    margin-right: 5px;
+}
+
+/*MODAL CONSULTA DE VUELO*/
+
+.modal-content{
+    padding:30px;
+}
+
+.modal-content .button{
+    background-color:#040F4A;
+    padding:10px;
+    border-radius:5px;
+    min-width:190px ;
+    margin:15px auto;
+    color:#FFFFFF
+
+}
+
+.modal-content .button:hover{
+    background-color:#C10909;
+    padding:10px;
+    border-radius:5px;
+    min-width:190px ;
+    margin:15px auto;
+    color:#FFFFFF
+
+}
+.modal-title{
+    font-family: 'Acme', sans-serif;
+    font-size: 26px;
+}
+
+.modal-content input{
+ border: none;
+}
+
+
+/*FORMULARIO LOGIN*/
+.containerLogin{
+    background-image: url(./images/place.jpg);/*imagen de fondo*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:40px;
+}
+
+.cardLogin{
+    padding:20px;
+    max-width: 400px;
+    width: 100%;
+	margin: 20px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.1);
+	box-shadow: 3px 3px 7px #4E4F51;
+	border-radius: 10px;
+	border: 1px solid #4E4F51;/*borde de caja*/
+	}
+
+.cardLogin img{
+	width: 20rem;
+	text-align: center;
+}
+
+.cardLogin h3{
+    font-family: 'Acme', sans-serif;
+    color: #C10909;
+	
+}
+.cardLogin a{
+	font-size: 14px;
+}
+
+
+.cardLogin input[type=text], input[type=password], input[type=email] {
+	text-align: center;
+	width: 100%;
+	vertical-align: middle;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	margin: 10px 0;
+	resize: none;
+	border: 1px solid #4E4F51;
+	
+}
+.cardLogin label{
+    margin-right:3px;
+}
+
+/*FORMULARIO DE REGISTRO*/
+.containerRegistro{
+    background-image: url(./images/place.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:40px;
+   
+
+}
+.cardRegistro{
+    padding:20px;
+    max-width: 900px;
+    width: 100%;
+	margin: 20px  auto;
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 3px 3px 7px #4E4F51;
+	border-radius: 10px;
+	border: 1px solid #4E4F51;
+	}
+
+
+.cardRegistro h3{
+    font-family: 'Acme', sans-serif;
+    color: #C10909;
+    text-align: center;
+	
+}
+.cardRegistro a{
+	font-size: 14px;
+}
+
+
+.cardRegistro input[type=text], input[type=password], input[type=email],input[type=date]{
+	text-align: left;
+	min-width:300px;
+    width: 100%;
+	vertical-align: middle;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	margin: 10px 0;
+	resize: none;
+	border: 1px solid #4E4F51;
+	
+}
+
+
+.cardRegistro select{
+	text-align: left;
+	min-width:300px;
+    width: 100%;
+	vertical-align: middle;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	margin: 10px 0;
+	resize: none;
+	border: 1px solid #4E4F51;
+	
+}
+.cardRegistro label{
+    margin-right:3px;
+    color:#000000;
+}
+
+.buttonBlue{
+    background-color:#040F4A;
+    padding:10px;
+    border-radius:5px;
+    min-width:190px;
+    margin:15px auto;
+    color:#FFFFFF
+
+}
+
+.buttonBlue:hover{
+    background-color:#C10909;
+    color:#FFFFFF
+}
+
+.buttonRed{
+    background-color:#C10909;
+    padding:10px;
+    border-radius:5px;/*redondea los bordes del boton*/
+    min-width:190px ;/*tamaño de la caja*/
+    margin:15px auto;
+    color:#FFFFFF
+}
+
+.buttonRed:hover{/*hover" cuando paso el mause por encima"*/
+    background-color:#FFFFFF;
+    color:#040F4A;
+}
+
+.botonregistro{
+    text-align:center;
+}
+
+.columFormRegistro{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+
+/* MEDIA CUERIES PARA EL RESPONSIVE */
+
+
+@media (max-width: 900px) {
+    .navar{
+        display: inline;
+        text-align: center;
+        padding:1% 2%;
+       
+    }
+    .contactenos{
+        display: inline-block;
+        
+    
+    }
+    .navar li a{
+        color:#C10909;
+        text-decoration: none;
+        margin-bottom:20px;
+        
+    }
+
+     .consultaDeVuelo label{
+            color:#C10909;
+            margin-bottom:8px;
+    }
+
+     .ContainerPromociones{
+            padding: 20px 30px;
+     }
+
+     .contactenos li {
+        margin-bottom: 10px;
+    }
+    .containerRegistro{
+        padding:20px;
+    }
+    .columFormRegistro{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+    }
+
+    .cardRegistro input[type=text], input[type=password], input[type=email], input[type=date]{    
+        min-width:180px;
+        width: 100%;  
+       
+    }
+
+    .cardRegistro select{    
+        min-width:180px;
+        width: 100%;  
+       
+    }
+    .containerRegistro{
+        padding:20px;
+    }
+    .cardLogin{
+        margin: 5px;
+    }
+    
+
+}
+@media (max-width: 300px) {
+    .cardRegistro input[type=text], input[type=password], input[type=email], input[type=date]{    
+        min-width:150px;
+        width: 100%;  
+       
+    }
+
+    .cardRegistro select{    
+        min-width:150px;
+        width: 100%;  
+       
+    }
+    .buttonBlue{        
+        min-width:150px;      
+    
+    }
+    .navar li a{
+        font-size:20px;/*tamaño de letra*/     
+        
+    }
+    .consultaDeVuelo label{       
+        font-size:19px;
+      
+    }
+
+    .containerRegistro{
+        padding:10px;
+    }
+    .containerLogin{
+        padding:10px;
+    }
+}

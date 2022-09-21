@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang=es-ES>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content=" width=device-width, initial-scale=1">
+  <title>Aeropuerto Santa ana</title>
+	<link rel="icon" href="images/1.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/f3207f5ade.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container_index">
+    <nav>
+        <div class="nav">
+      
+        <div>
+             <img src="images/Aeropuerto_Santa_Ana__6___1_-removebg-preview.png"  class="logo">  
+        </div>
+        <div class="navar">
+          
+          <li><a href="index.html" type="button" type="submit" class="">Promociones</a></li>
+          <li><a href="login.html" type="button" type="submit" class="">Ingresar</a></li>
+          <li><a href="registro.html" type="button" type="submit" class="">Registarse</a></li>
+          <li><a href="reservarvuelo.html" type="button" type="submit" class="">Reservar Vuelo</a></li>           
+          <div class="consultaDeVuelo">
+          <label for="consultarVuelo">Consultar Vuelo</label>
+          <input type="text" id="consultarVuelo" name="consultarVuelo" placeholder="Ingrese el Código " class="" > 
+          <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Consultar
+          </button>
+          </div>
+        </div>
+        </div>
+    </nav>
+    <main>
+        <div class="containerRegistro">
+            <div class="cardLogin">
+                <form>
+                    <div>
+                        <h3>Inicio de Sesion</h3>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="" class="col-sm-2 col-form-label">Usuario</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="usuario" required>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="" class="col-sm-2 col-form-label">Contraseña</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="contrasena" required>
+                      </div>
+                    </div>
+                    <div>
+                    					
+						<h5 class="ncuenta"> ¿No tienes cuenta?</h5><a href="registro.html">Registrarse</a><br>
+                    <button type="submit" class="buttonBlue">Ingresar</button>
+                  </form>
+            </div>
+        </div>
+    <!-- Scrollable modal -->
+    <div class="modal" tabindex="-1" id="exampleModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Información del vuelo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                  <label for="" class="col-sm-2 col-form-label">Código:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="codigoVuelo">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="i" class="col-sm-2 col-form-label">Avion:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="avion">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="" class="col-sm-2 col-form-label">Piloto:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="piloto">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="" class="col-sm-3 col-form-label">Capacidad:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="capacidad">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="" class="col-sm-2 col-form-label">Estado:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="estado">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="" class="col-sm-2 col-form-label">Aeroínea:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="aerolinea">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="button" data-bs-dismiss="modal">Cerrar</button>
+              <input type="button" class="button" value="Imprimir Información" onClick="window.print()">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+       <div class="footer">
+        <ol class="contactenos">
+            <li><i class="fa fa-whatsapp" > </i> 3178675045</li>
+            <li><i class="fa fa-phone" ></i> Tel: 7329043 </li>
+            <li><i class="fa fa-location-arrow "> </i> Calle 100 # 70-80</li>
+            <li><i class="fa fa-envelope" > </i> aeropuertosantaana@gmail.com</li>  
+        </ol>
+       </div> 
+       <div class="copy">
+        <p>&copy;Sitio desarrollado por KAMEJ-todos los derechos reservados</p>
+       </div>
+    </footer>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</html>
